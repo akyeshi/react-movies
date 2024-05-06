@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 
 
-export default function NavBar({ user }) {
+export default function NavBar({ user, setUser }) {
   return (
     <nav>
       <p>Welcome, {user}</p>
-      <Link>Movies</Link>
+      <Link to="/movies">Movies</Link>
       &nbsp; | &nbsp;
-      <Link>Actors</Link>
+      <Link to="/actors">Actors</Link>
+      &nbsp; | &nbsp;
+      <Link to="/logout">Log Out</Link>
     </nav>
   )
 }
