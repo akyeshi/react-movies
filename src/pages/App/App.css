@@ -11,14 +11,136 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
+  /* height: 100vh;
+  width: 100vw;  */
 
 }
 
 
-nav>a {
+div.nav-links {
+  text-decoration: none;
+  color: #535bf2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* width: 4rem;  */
+  gap: 5px;
+  /* width: 100%;  */
+  margin-bottom: 1rem;
+}
+
+div.nav-links>a {
   text-decoration: none;
   font-weight: 500;
-  color: #535bf2;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 3px;
 }
 
+div.nav-links>a:hover {
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 3px;
+  background: yellow;
+  color: red;
+  opacity: 0.7;
+  transform: scale(1.10);
+}
+
+
+
+div.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-style: double;
+  border-radius: 10px;
+  /* grid-gap: 2rem;  */
+}
+
+
+div.item-card {
+  background-color: #eee;
+  border-style: solid;
+  margin: 1vw;
+  border-radius: 5px;
+  border-width: 0.5px;
+  border-color: rgba(150, 150, 150, 0.5);
+  text-align: center;
+  height: 30vh;
+  width: 30vw;
+}
+
+div.item-card:hover {
+  transform: scale(1.1);
+}
+
+div.login-container {
+  background-image: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.login-text-area {
+  width: 50%;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+div.login-container h3 {
+  color: white;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  font-size: 1.5em;
+  /* text-align: center; */
+  border-radius: 5px;
+}
+
+.input-group input:focus {
+  border: 1px solid hsl(201, 100%, 50%);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: black;
+  border: 1px solid lightskyblue;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-btn:hover {
+  background: slateblue;
+}
+
+.login-btn:focus {
+  background: hsl(201, 100%, 50%)
+}
+
+.movie-card-title {
+  background: #fff;
+  margin: 8px;
+  border-radius: 5px;
+}

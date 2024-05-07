@@ -1,10 +1,22 @@
+import ActorCard from "../../components/ActorCard/ActorCard";
 
 
+export default function ActorsListPage({movies}) {
 
-export default function ActorsListPage() {
+  let obj = {}; 
+  movies.forEach(movie => {
+    movie.cast.forEach(actor => {
+      obj[actor] = 1; 
+    })
+  }); 
+
+  let actorList = Object.keys(obj); 
+
   return (
-    <div className="actorspage-container">
-      <h1>ActorsListPage</h1>
+    <div className="container">
+      {actorList.map(actor => {
+        return <ActorCard key={actor} actor={actor} />
+      })}
     </div>
   )
 }

@@ -5,11 +5,13 @@ export default function NavBar({ user, setUser }) {
   return (
     <nav>
       <p>Welcome, {user}</p>
-      <Link to="/movies">Movies</Link>
-      &nbsp; | &nbsp;
-      <Link to="/actors">Actors</Link>
-      &nbsp; | &nbsp;
-      <Link to="/logout">Log Out</Link>
+      <div className="nav-links">
+        <Link to="/movies">Movies</Link>
+
+        <Link to="/actors">Actors</Link>
+
+        <Link to="/logout">Log Out</Link>
+      </div>
     </nav>
   )
 }

@@ -12,18 +12,22 @@ export default function LoginPage({ setUser }) {
 
   return (
     <div className="login-container">
-      <p>Please pick a username:</p>
-      <form onSubmit={handleSubmit}>
-        <label>Username</label>
-        <input
-          type="text"
-          name="name"
-          value={userData.name}
-          onChange={e => setUserData({ ...userData, [e.target.name]: e.target.value })}
-          required
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <div className="login-text-area">
+        <h3>You Are in the Theater, Please Turn Off All Your Devices and Enjoy the Show!</h3>
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label>Username</label>
+            <input
+              type="text"
+              name="name"
+              value={userData.name}
+              onChange={e => setUserData({ ...userData, [e.target.name]: e.target.value })}
+              required
+              />
+          </div>
+          <button className="login-btn" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   )
 }
