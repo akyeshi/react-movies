@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Reference: [Codesandbox: MERNstack Movie](https://codesandbox.io/p/sandbox/mern-movies-lab-finished-forked-mwdytr)
+[Codesandbox - MERNstack Movie](https://codesandbox.io/p/sandbox/mern-movies-lab-finished-forked-mwdytr)
 
 ### `npm start`
 
